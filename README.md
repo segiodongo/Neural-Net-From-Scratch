@@ -3,4 +3,6 @@ Resources:
 
 References for backpropogation algorithm: https://machinelearningmastery.com/implement-backpropagation-algorithm-scratch-python/
 
+References for softmax algorithm without overflow: deeplearningbook.org/contents/numerical.html
+
 
