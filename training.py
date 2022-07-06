@@ -61,9 +61,8 @@ def backPropogate(model, target):
         derivates = calculateActivationDerivatives(np.copy(layer.activations))
         layer.gradient = np.multiply(errors, derivates)
 
-def trainModel(model, data, labels, epochs = 3):
+def trainModel(model, data, labels, epochs = 3, learningRate = 0.0001):
     batchSize = 128
-    learningRate = 0.0001
     batches = splitIntoBatches(data, labels, batchSize)
     # print(type(batches[0]))
     for epoch in range(epochs):
@@ -78,7 +77,7 @@ def trainModel(model, data, labels, epochs = 3):
             if(len(batch[0])>0):
                 performance, accuracy = calculateMetrics(model, batch[0], batch[1])
             
-            print(f"Batch # {i+1},   accuracy: {accuracy},   Loss: {performance}")
+            print(f"Batch # {i+1},   accuracy: {accuracy}%,   Loss: {performance}")
         print("###################################")
         print("###################################")
         print("###################################")
