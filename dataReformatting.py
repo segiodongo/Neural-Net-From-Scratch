@@ -16,3 +16,4 @@ def convertToClassificationMatrix(labels):
     for i in range(len(labels)):
         matrix[i, labels[i]] = 1.0
     return matrix
+    
