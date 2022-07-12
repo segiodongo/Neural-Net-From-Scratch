@@ -24,7 +24,7 @@ class InputLayer(object):
         #Initializes Random Values for activations and gradient vector
         self.activations = np.random.rand(nodes)
         self.gradient = np.random.rand(nodes)
-
+    #Function for the network to feed forward its values to the next layer
     def feedForward(self, initalValues):
         self.activations = initalValues
         return initalValues
