@@ -5,8 +5,10 @@ Resources:
 
 Instructions:
     Creating Model: use Model() constructor to initialize model
+    
         Creating Layers: layer = Layer(numberOfNodes, activationFn, previousLayer)
                     or   layer = InputLayer(numberOfNodes)
+                    
             Note: possible activation functions as of 7/5/2022 are "relu", "sigmoid", and "softmax"
         Adding Layers: model.addLayer(layer)
     Training Model: trainModel(model, data, labels, epochs, learningRate)
