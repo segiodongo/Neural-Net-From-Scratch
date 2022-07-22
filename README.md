@@ -1,8 +1,6 @@
 Resources:
     3Blue1Brown playlist on neural networks: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
-
     References for backpropogation algorithm: https://machinelearningmastery.com/implement-backpropagation-algorithm-scratch-python/
-
     References for softmax algorithm without overflow: https://www.deeplearningbook.org in part 1 chapter 4 pg 79
 
 Instructions:
