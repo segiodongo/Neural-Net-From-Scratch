@@ -25,7 +25,7 @@ model.addLayer(layer3)
 testModel(model, testData, test_labels)
 
 #Train model
-trainModel(model, trainData, train_labels, 0.0001, 1)
+trainModel(model, trainData, train_labels, 0.0001, 3)
 
 #Test model after training to see effect of training
 testModel(model, testData, test_labels)

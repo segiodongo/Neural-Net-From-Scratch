@@ -51,7 +51,6 @@ class Layer(object):
         self.activationFun = activation
 
     def feedForward(self, inputs):
-
         #Calculates values to be passed into activation function
         self.activations = np.matmul(self.weights, inputs) + self.bias
 
